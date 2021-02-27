@@ -2,7 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 // const Choices = require('inquirer/lib/objects/choices');
-const license = require('./utils/license');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 
 // What is your Project Title ? 
@@ -15,8 +15,7 @@ const license = require('./utils/license');
 
 
 //Created an array of questions for user input
-const promptUser = () =>
-    inquirer.prompt([
+const questions = [
         {
             type: 'input',
             name: 'fullName',
@@ -90,47 +89,29 @@ const promptUser = () =>
             choices: ["MIT", "Apache License", "GNU GPLv3", "GNU AGPLv3", "Mozilla Public License", "Boost Software License", "None"]
         },
 
-    ]);
-
-//Created a function to store user input to README file
-const generateReadme = (answers) =>`
-# ${answers.title}
-___
-
-
-## Description 
-
-${answers.description}
-
-
-## Installation 
-
-${answers.instruction}
-
-## Usage
-
-
-![${answers.imgTxt}](${answers.screenshot})
-
-## Contacts 
-
-Please follow me on Github: ${answers.GitHub} 
-For any questions or to report issues, please email me at: ${answers.email}
-
-
-## License 
-
-${answers.license}
-${license}
-`;
+    ];
 
 //Created a function to initialize app
+// const init = () => {
+//     promptUser()
+//         .then((answers) => {
+//             try {
+//                 const readme = generateReadme(answers);
+//                 fs.writeFileSync('../README.md', readme);
+//                 console.log('SUCCESSFULLY created README.md');
+//             }
+//             catch (error) {
+//                 console.log(error);
+//             }
+//         });
+// };
+
 const init = () => {
-    promptUser()
+    inquirer.prompt([...questions])
         .then((answers) => {
             try {
-                const readme = generateReadme(answers);
-                fs.writeFileSync('../README.md', readme);
+                
+                fs.writeFileSync('../README.md', generateMarkdown(answers));
                 console.log('SUCCESSFULLY created README.md');
             }
             catch (error) {

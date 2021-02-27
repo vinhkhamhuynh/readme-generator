@@ -1,11 +1,11 @@
 
-# dsfsdf
+# Readme Generator
 ___
 
 
 ## Description 
 
-sdf
+creating a readme generator to auto generate readme file
 
 
 ## Installation 
@@ -15,19 +15,15 @@ undefined
 ## Usage
 
 
-![fsa](fsa)
+![screenshot for readme generator](/asset/screenshot.png)
 
 ## Contacts 
 
-Please follow me on Github:  
-For any questions or to report issues, please email me at: dfsd
+Please follow me on Github: vinhkhamhuynh.github.io 
+For any questions or to report issues, please email me at: vinhkhamhuynh@gmail.com
 
 
 ## License 
 
 MIT
-function license() {
-  return renderLicenseSection()
 
-;
-}
