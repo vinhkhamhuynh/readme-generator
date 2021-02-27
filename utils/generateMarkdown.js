@@ -59,15 +59,15 @@ function renderLicenseLink(data) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(data) {
+  console.log(data);
   if (data === 'None') {
     return `
   `;
   } else {
     return `
-## License
 ${renderLicenseBadge(data)}
  
-This project is licensed under the ${data.license} license. For more information, click here: ${renderLicenseLink(data)} 
+This project is licensed under the ${data} license. For more information, click here: ${renderLicenseLink(data)} 
  
 `;
   }
@@ -75,18 +75,17 @@ This project is licensed under the ${data.license} license. For more information
 
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown (answers) {
+function generateMarkdown(answers) {
   return `
-  # ${answers.title}
-  ___
+# ${answers.title}
   
   
-  ## Description 
+## Description 
   
-  ${answers.description}
+${answers.description}
 
 
-  ## Table of Contents
+## Table of Contents
 
 * [Installation](#Installation)
 * [Usage](#Usage) 
@@ -94,36 +93,43 @@ function generateMarkdown (answers) {
 ${answers.license === 'None' ? "" : "* [License](#License)"}
 * [Questions](#Questions)
   
+
+## Installation 
   
-  ## Installation 
-  
-  Please run the following command to install required software:
-  \`\`\`
-  ${answers.installation}
-  \`\`\`
+Please run the following command to install required software:
+
+\`\`\`
+${answers.installation}
+\`\`\`
 
 
-  ## Usage
+## Usage
+
+These are the technologies and languages use for this project: ${answers.usage}
+
+Deployed GitHub Link:   ${answers.deployedLink}
+
+Github Repository Link: ${answers.githubLink}
   
-  Deployed GitHub Link:   ${answers.deployedLink}
-  Github Repository Link: ${answers.githubLink}
-  
-  ![${answers.imgTxt}](${answers.screenshot})
+![${answers.imgTxt}](${answers.screenshot})
   
    
-  ## License 
+## License 
   
-  ${answers.license === 'Nome' ? "" : renderLicenseSection(answers.license)}
+${answers.license === 'None' ? "User did not provide a license for this project" : renderLicenseSection(answers.license)}
 
 
-  ## Questions
+## Questions
   
-  Please follow me on Github for more projects: [${answers.GitHub}](https://github.com/${answers.GitHub} 
-  For any questions or to report issues, please email me at: ${answers.email}
+Please follow me on Github for more projects: [${answers.GitHub}](https://github.com/${answers.GitHub}) 
+
+For any questions or to report issues, please email me at: ${answers.email}
   
-  `;
-  
+
+`;
+
 }
 
 
 module.exports = generateMarkdown;
+

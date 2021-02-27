@@ -134,7 +134,7 @@ const init = () => {
         .then((answers) => {
             try {
                 
-                fs.writeFileSync('../README.md', generateMarkdown(answers));
+                fs.writeFileSync('./README.md', generateMarkdown(answers));
                 console.log('SUCCESSFULLY created README.md');
             }
             catch (error) {
