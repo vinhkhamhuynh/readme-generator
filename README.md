@@ -19,19 +19,20 @@ In this project, users will use bash or terminal to run node index. Then a serie
 ## Installation 
   
 Please run the following command to install required software:
-
 ```
-npm i inquirer
+npm instal inquirer
 ```
 
 
 ## Usage
 
-These are the technologies and languages use for this project: Terminal or Bash , Javascript
+These are the technologies and languages use for this project: Terminal or Bash, and Javascript
 
-Deployed GitHub Link:   https://vinhkhamhuynh.github.io/readme-generator/.
+Deployed GitHub Link:   https://vinhkhamhuynh.github.io/readme-generator/. 
 
 Github Repository Link: https://github.com/vinhkhamhuynh/readme-generator
+
+[Click for video on Youtube DEMO Readme Generator](https://youtu.be/H_k5KDruYSM)
   
 ![Screenshot for readme file](/img/readmescreenshot.PNG)
   
@@ -48,8 +49,7 @@ This project is licensed under the MIT license. For more information, click here
 
 ## Questions
   
-Please follow me on Github for more projects: [vinhkhamhuynh](https://github.com/vinhkhamhuynh) 
-
+Please follow me on Github for more projects: [vinhkhamhuynh](https://github.com/vinhkhamhuynh)
+ 
 For any questions or to report issues, please email me at: vinhkhamhuynh@gmail.com
   
-
