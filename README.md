@@ -1,29 +1,52 @@
 
-# Readme Generator
-___
+  # readme gen
+  ___
+  
+  
+  ## Description 
+  
+  readme gen doing the thing that readme gen is doing 
 
 
-## Description 
+  ## Table of Contents
 
-creating a readme generator to auto generate readme file
+* [Installation](#Installation)
+* [Usage](#Usage) 
+* [Contributing](#Contributing)
+*  
+
+* [License](#License)
+* [Questions](#Questions)
+  
+  
+  ## Installation 
+  
+  Please run the following command to install required software:
+  ```
+  need to run npm init then npm i inquirer
+  ```
 
 
-## Installation 
+  ## Usage
+  
+  
+  ![its a screenshot](i dont have it )
+  
+   
+  ## License 
+  
+  
+## License
+![badge](https://img.shields.io/badge/license-MIT-orange)
+ 
+This project is licensed under the undefined license. For more information, click here: https://spdx.org/licenses/MIT.html 
+ 
 
-undefined
-
-## Usage
 
 
-![screenshot for readme generator](/asset/screenshot.png)
-
-## Contacts 
-
-Please follow me on Github: vinhkhamhuynh.github.io 
-For any questions or to report issues, please email me at: vinhkhamhuynh@gmail.com
-
-
-## License 
-
-MIT
-
+  ## Questions
+  
+  Please follow me on Github for more projects: [vinhkhamhuynh](https://github.com/vinhkhamhuynh 
+  For any questions or to report issues, please email me at: vinhkhamhuynh@gmail.com
+  
+  

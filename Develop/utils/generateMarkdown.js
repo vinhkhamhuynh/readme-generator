@@ -84,26 +84,40 @@ function generateMarkdown (answers) {
   ## Description 
   
   ${answers.description}
+
+
+  ## Table of Contents
+
+* [Installation](#Installation)
+* [Usage](#Usage) 
+* [Contributing](#Contributing)
+${answers.license === 'None' ? "" : " * [License](#License)"}
+* [Questions](#Questions)
   
   
   ## Installation 
   
-  ${answers.instruction}
-  
+  Please run the following command to install required software:
+  \`\`\`
+  ${answers.installation}
+  \`\`\`
+
+
   ## Usage
   
   
   ![${answers.imgTxt}](${answers.screenshot})
   
-  ## Contacts 
-  
-  Please follow me on Github: ${answers.GitHub} 
-  For any questions or to report issues, please email me at: ${answers.email}
-  
-  
+   
   ## License 
   
-  ${answers.license}
+  ${answers.license === 'Nome' ? "" : renderLicenseSection(answers.license)}
+
+
+  ## Questions
+  
+  Please follow me on Github for more projects: [${answers.GitHub}](https://github.com/${answers.GitHub} 
+  For any questions or to report issues, please email me at: ${answers.email}
   
   `;
   
