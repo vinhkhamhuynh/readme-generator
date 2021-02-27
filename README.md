@@ -1,11 +1,11 @@
 
-  # readme gen
+  # ffsd
   ___
   
   
   ## Description 
   
-  readme gen doing the thing that readme gen is doing 
+  sdf
 
 
   ## Table of Contents
@@ -13,8 +13,6 @@
 * [Installation](#Installation)
 * [Usage](#Usage) 
 * [Contributing](#Contributing)
-*  
-
 * [License](#License)
 * [Questions](#Questions)
   
@@ -23,14 +21,14 @@
   
   Please run the following command to install required software:
   ```
-  need to run npm init then npm i inquirer
+  asdf
   ```
 
 
   ## Usage
   
   
-  ![its a screenshot](i dont have it )
+  ![sf](sdaf)
   
    
   ## License 
@@ -46,7 +44,7 @@ This project is licensed under the undefined license. For more information, clic
 
   ## Questions
   
-  Please follow me on Github for more projects: [vinhkhamhuynh](https://github.com/vinhkhamhuynh 
-  For any questions or to report issues, please email me at: vinhkhamhuynh@gmail.com
+  Please follow me on Github for more projects: [ff](https://github.com/ff 
+  For any questions or to report issues, please email me at: f
   
   

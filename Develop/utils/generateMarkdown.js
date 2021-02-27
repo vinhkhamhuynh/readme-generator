@@ -91,7 +91,7 @@ function generateMarkdown (answers) {
 * [Installation](#Installation)
 * [Usage](#Usage) 
 * [Contributing](#Contributing)
-${answers.license === 'None' ? "" : " * [License](#License)"}
+${answers.license === 'None' ? "" : "* [License](#License)"}
 * [Questions](#Questions)
   
   
@@ -105,6 +105,8 @@ ${answers.license === 'None' ? "" : " * [License](#License)"}
 
   ## Usage
   
+  Deployed GitHub Link:   ${answers.deployedLink}
+  Github Repository Link: ${answers.githubLink}
   
   ![${answers.imgTxt}](${answers.screenshot})
   
